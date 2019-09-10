@@ -1,7 +1,7 @@
 var express=require('express');
 var app=express();
 
-app.get('/test',(req,res)=>
+app.get('/',(req,res)=>
 {
     res.send("this is from jenkins CI/CD pipeline");
 })
