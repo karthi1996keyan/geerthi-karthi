@@ -8,7 +8,7 @@ var app=express();
  */
 app.get('/',(req,res)=>
 {
-    res.send("totally different fromfgfg others from githusdfdsb ");
+    res.send("dont confuse ");
 })
 
 app.listen(3000,"0.0.0.0",()=>
