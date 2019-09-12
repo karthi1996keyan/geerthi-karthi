@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-node.xml"
   },
   "repository": {
     "type": "git",
