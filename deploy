@@ -1,4 +1,4 @@
-shh root@172.31.7.8 <<<EOF
+shh root@172.31.7.8 <<EOF
 cd /home/backendCI/
 git pull orgin master 
 npm install --production
