@@ -1,3 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Thu, 12 Sep 2019 10:07:14 GMT" time="0.041">
-<testcase classname="" name="Response from 3000 port CICD" time="0.021"/>
-</testsuite>
