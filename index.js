@@ -8,7 +8,7 @@ var app=express();
  */
 app.get('/',(req,res)=>
 {
-    res.send("this is changes from github last try ");
+    res.send("totally different from others ");
 })
 
 app.listen(3000,()=>
