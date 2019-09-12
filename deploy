@@ -1,3 +1,4 @@
+-#!/bin/sh 
 shh root@172.31.7.8 <<EOF
 cd /home/backendCI/
 git pull orgin master 
