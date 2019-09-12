@@ -8,7 +8,7 @@ var app=express();
  */
 app.get('/',(req,res)=>
 {
-    res.send("totally different ");
+    res.send(" different ");
 })
 
 app.listen(3000,()=>
