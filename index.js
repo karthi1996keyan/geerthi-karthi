@@ -8,7 +8,7 @@ var app=express();
  */
 app.get('/',(req,res)=>
 {
-    res.send("totally different from others from githusdfdsb ");
+    res.send("totally different fromfgfg others from githusdfdsb ");
 })
 
 app.listen(3000,()=>
