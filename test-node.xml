@@ -1,3 +1,26 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Thu, 12 Sep 2019 11:17:50 GMT" time="0.064">
-<testcase classname="" name="Response from 3000 port CICD" time="0.041"/>
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="1" skipped="0" timestamp="Thu, 12 Sep 2019 12:59:14 GMT" time="0.059">
+<testcase classname="" name="Response from 3000 port CICD" time="0"><failure>expected &#x27;&#x3C;!DOCTYPE html&#x3E;\n&#x3C;html lang=&#x22;en&#x22;&#x3E;\n&#x3C;head&#x3E;\n&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;\n&#x3C;title&#x3E;Error&#x3C;/title&#x3E;\n&#x3C;/head&#x3E;\n&#x3C;body&#x3E;\n&#x3C;pre&#x3E;Cannot GET /&#x3C;/pre&#x3E;\n&#x3C;/body&#x3E;\n&#x3C;/html&#x3E;\n&#x27; to equal &#x27;dont confuse&#x27;
+
+      + expected - actual
+
+      -&#x3C;!DOCTYPE html&#x3E;
+      -&#x3C;html lang=&#x22;en&#x22;&#x3E;
+      -&#x3C;head&#x3E;
+      -&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+      -&#x3C;title&#x3E;Error&#x3C;/title&#x3E;
+      -&#x3C;/head&#x3E;
+      -&#x3C;body&#x3E;
+      -&#x3C;pre&#x3E;Cannot GET /&#x3C;/pre&#x3E;
+      -&#x3C;/body&#x3E;
+      -&#x3C;/html&#x3E;
+      +dont confuse
+      
+AssertionError: expected &#x27;&#x3C;!DOCTYPE html&#x3E;\n&#x3C;html lang=&#x22;en&#x22;&#x3E;\n&#x3C;head&#x3E;\n&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;\n&#x3C;title&#x3E;Error&#x3C;/title&#x3E;\n&#x3C;/head&#x3E;\n&#x3C;body&#x3E;\n&#x3C;pre&#x3E;Cannot GET /&#x3C;/pre&#x3E;\n&#x3C;/body&#x3E;\n&#x3C;/html&#x3E;\n&#x27; to equal &#x27;dont confuse&#x27;
+    at Request._callback (test/test-page.js:8:25)
+    at Request.self.callback (node_modules/request/request.js:185:22)
+    at Request.&#x3C;anonymous&#x3E; (node_modules/request/request.js:1161:10)
+    at IncomingMessage.&#x3C;anonymous&#x3E; (node_modules/request/request.js:1083:12)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)</failure></testcase>
 </testsuite>
