@@ -1,5 +1,5 @@
 cd /home/backendCI/
-git pull orgin master --no-edit
+git pull orgin master 
 npm install --production
 pm2 restart all
 npm test
