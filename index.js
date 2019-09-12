@@ -1,21 +1,17 @@
-var express=require('express');
-var app=express();
+var fs = require('fs');
+var http = require('http');
+var https = require('https');
+var privateKey  = fs.readFileSync('server.key', 'utf8');
+var certificate = fs.readFileSync('server.cert', 'utf8');
 
+var credentials = {key: privateKey, cert: certificate};
+var express = require('express');
+var app = express();
 
-/**
- * will check with unit testing this time
- * added one more line 
- */
-app.get('/',(req,res)=>
-{
-    res.send("dont confuse");
-})
+// your express configuration here
 
-app.get('/test',(req,res)=>
-	{
-		res.send("test is start here -8st test please reflect  in production");
-	})
-app.listen(3000,"0.0.0.0",()=>
-{
-    console.log('Port is running in 3000');
-});
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(3000);
+httpsServer.listen(8443);
