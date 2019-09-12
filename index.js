@@ -13,7 +13,7 @@ app.get('/',(req,res)=>
 
 app.get('/test',(req,res)=>
 	{
-		res.send("test is start here -1st test");
+		res.send("test is start here -2st test");
 	})
 app.listen(3000,"0.0.0.0",()=>
 {
