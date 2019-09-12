@@ -8,7 +8,7 @@ var app=express();
  */
 app.get('/',(req,res)=>
 {
-    res.send("this is from jenkins CI/CD pipeline");
+    res.send("this is changes from github");
 })
 
 app.listen(3000,()=>
